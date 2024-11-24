@@ -1,0 +1,24 @@
+:root {
+  --bg-color: #fff;
+  --text-black: #202020;
+  --text-white: #fff;
+  --text-highlight: #E5BD70;
+  --white: #fff;
+  --black: #202020;
+
+  --primary: #BE0503;
+
+  --font-headline: "Roboto", sans-serif;
+  --font-body: "Roboto", sans-serif;
+
+  --section-padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+
+  --h1-headline-size: clamp(3.81rem, 7.61vw, 5.61rem);
+  --h2-headline-size: clamp(2.59rem, 5.209vw, 4.209rem);
+  --h3-headline-size: clamp(2.3rem, 3.5vw, 3.2rem);
+  --h4-headline-size: clamp(2rem, 3.3vw, 2.8rem);
+  --h5-headline-size: clamp(1.8rem, 3vw, 2.5rem);
+  --h6-headline-size: clamp(1.5rem, 2.888vw, 2.2rem);
+  --h7-headline-size: clamp(1.33rem, 2.5vw, 1.8rem);
+  --small-headline-size: clamp(1rem, 2vw, 1.5rem);
+}

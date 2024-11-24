@@ -1,0 +1,21 @@
+navigation_settings:
+  socials:
+    - title: "Facebook"
+      url: "https://www.facebook.com/"
+      icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg"
+    - title: "Instagram"
+      url: "https://www.instagram.com/"
+      icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg"
+    - title: "Youtube"
+      url: "https://www.youtube.com/"
+      icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg"
+
+  navigation_links:
+    - title: "Home"
+      url: "/"
+    - title: "About"
+      url: "/about"
+    - title: "Location"
+      url: "/Location"
+    - title: "Calendar"
+      url: "/calendar"

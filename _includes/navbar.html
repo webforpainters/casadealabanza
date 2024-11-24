@@ -1,0 +1,41 @@
+<header id="cs-navigation">
+  <div class="cs-container">
+    <!--Nav Logo-->
+    <a href="" class="cs-logo" aria-label="back to home">
+      <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="logo" aria-hidden="true" decoding="async">
+    </a>
+    <!--Navigation List-->
+    <nav class="cs-nav" role="navigation">
+      <!--Mobile Nav Toggle-->
+      <button class="cs-toggle" aria-label="mobile menu toggle">
+        <div class="cs-box" aria-hidden="true">
+          <span class="cs-line cs-line1" aria-hidden="true"></span>
+          <span class="cs-line cs-line2" aria-hidden="true"></span>
+          <span class="cs-line cs-line3" aria-hidden="true"></span>
+        </div>
+      </button>
+      <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+      <div class="cs-ul-wrapper">
+        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+          {% for link in site.data.settings.navigation_settings.navigation_links %}
+          <li class="cs-li">
+            <a href="{{ link.url }}" class="cs-li-link {% if link.active %}cs-active{% endif %}">
+              {{ link.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+    <div class="cs-contact-group">
+      <a href="tel:+1 305 90 02" class="button-solid-secondary">{{ site.data.settings.navigation_settings.button_text }}</a>
+      <div class="cs-social">
+        {% for social in site.data.settings.navigation_settings.socials %}
+        <a href="{{ social.url }}" class="cs-social-link">
+          <img class="cs-social-icon" src="{{ social.icon }}" alt="social media icon logo" width="12" height="12" aria-hidden="true" decoding="async">
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</header>

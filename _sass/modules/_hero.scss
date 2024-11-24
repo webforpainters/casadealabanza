@@ -1,0 +1,181 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-228 {
+    /* Centers button */
+    text-align: center;
+    /* changes on tablet */
+    padding: 0 calc(16 / 16 * 1rem);
+    position: relative;
+    z-index: 1;
+    /* prevents overflow from the lines extending past the screen width */
+    overflow: hidden;
+
+    .cs-picture {
+      /* Background Image */
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+
+      &:before {
+        /* Black Color Overlay */
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.6;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* prevents the cursor from interacting with it */
+        pointer-events: none;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* Makes image act like a background-image */
+        object-fit: cover;
+      }
+    }
+
+    .cs-container {
+      width: 100%;
+      max-width: calc(1280 / 16 * 1rem);
+      /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
+      /* 144px - 280px - leaving extra space for the navigation */
+      /* changes on tablet */
+      padding: clamp(9rem, 25.95vw, 17.5rem) 0 0;
+      /* 60px - 200px */
+      padding-bottom: clamp(3.75rem, 12.5vw, 25rem);
+      margin: auto;
+      position: relative;
+
+      &:before {
+        /* Left Line */
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: -moz-linear-gradient(
+                        top,
+                        rgba(250, 251, 252, 0.5) 0%,
+                        rgba(250, 251, 252, 0) 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+                        top,
+                        rgba(250, 251, 252, 0.5) 0%,
+                        rgba(250, 251, 252, 0) 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .cs-flex-group {
+      /* 60px - 220px */
+      margin-bottom: clamp(3.75rem, 15.5vw, 13.75rem);
+      /* changes on tablet */
+      margin-left: calc(16 / 16 * 1rem);
+      width: 80vw;
+      /* 464px - 562px */
+      max-width: clamp(29rem, 60vw, 35.125rem);
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      column-gap: calc(20 / 16 * 1rem);
+      box-sizing: border-box;
+    }
+
+    .cs-text {
+      color: var(--text-white);
+      text-align: left;
+    }
+
+    .buttons-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: clamp(0.85rem, 4vw, 1.55rem);
+    }
+
+    .button-solid, .button-transparent { font-size: var(--h7-headline-size); }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #hero-228 {
+    /* 32px - 40px */
+    padding: 0 clamp(2rem, 5vw, 2.5rem);
+
+    .cs-container {
+      padding-bottom: calc(64 / 16 * 1rem);
+
+      &:after {
+        /* Right Line */
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: -moz-linear-gradient(
+                        top,
+                        rgba(250, 251, 252, 0) 0%,
+                        rgba(250, 251, 252, 0.5) 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+                        top,
+                        rgba(250, 251, 252, 0) 0%,
+                        rgba(250, 251, 252, 0.5) 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .cs-flex-group {
+      /* 44px - 88px */
+      margin-left: clamp(2.75rem, 5.9vw, 5.5rem);
+    }
+
+    .buttons-wrapper {
+      flex-direction: row;
+    }
+  }
+}
+
+/* Desktop Parallax Effect - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #hero-228 {
+    background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* creates parallax effect on background image */
+    background-attachment: fixed;
+    /* remove img tag so we can make parallax work */
+    .cs-picture {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+

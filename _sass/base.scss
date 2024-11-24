@@ -1,13 +1,13 @@
-:root {
-  --bg-color: #000;
-  --text-color: #fff;
-  --body-font: sans-serif, -apple-system;
-
-  --h1-headline-size: clamp(3.81rem, 7.61vw, 5.61rem);
-  --h2-headline-size: clamp(2.59rem, 5.209vw, 4.209rem);
-
-  --section-padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-}
+@import "tools/normalize";
+@import "settings/variables";
+@import "settings/typography";
+@import "settings/utilities";
+@import "components/buttons";
+@import "components/navbar";
+@import "components/footer";
+@import "modules/hero";
+@import "modules/quote";
+@import "modules/sermon";
 
 *,
 *::before,
@@ -17,17 +17,11 @@ body {
   margin: 0;
   padding: 0;
   background: var(--bg-color);
-  color: var(--text-color);
-  font-family: var(--body-font);
-  height: 100vw;
 }
 
 ul {
   list-style: none;
 }
-
-
-h1 { font-size: var(--h2-headline-size); }
 
 section {
   padding: var(--section-padding);

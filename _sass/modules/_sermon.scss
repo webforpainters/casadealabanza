@@ -1,0 +1,56 @@
+@media only screen and (min-width: 0) {
+  #sermon {
+    padding: var(--section-padding);
+    background: var(--black);
+    color: var(--text-white);
+
+    .container {
+      width: 100%;
+      max-width: calc(1280 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: clamp(1rem, 3vw, 2rem);
+    }
+
+    .content {
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .headline {
+      margin: 0 auto clamp(1rem, 2vw, 1.25rem) 0;
+    }
+
+    .text {
+      margin: 0;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: clamp(0.85rem, 4vw, 1.55rem);
+      margin-bottom: 1rem;
+    }
+
+    .button-solid, .button-transparent { font-size: var(--h7-headline-size); }
+
+    .video {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  #sermon {
+    .button-group {
+      flex-direction: row;
+      gap: clamp(0.85rem, 4vw, 1.55rem);
+    }
+  }
+}
