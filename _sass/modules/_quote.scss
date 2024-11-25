@@ -1,12 +1,8 @@
-/*-- -------------------------- -->
-<---           Quote            -->
-<--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #quote-561 {
     padding: var(--section-padding);
-    background-color: #f7f7f7;
+    background-color: var(--bg-light-gray);
 
     .cs-container {
       width: 100%;

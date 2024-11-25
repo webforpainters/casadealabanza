@@ -1,0 +1,36 @@
+@media only screen and (min-width: 0rem) {
+  #pastors {
+    background-color: var(--black);
+
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .headline {
+      text-transform: capitalize;
+      margin: 0 0 clamp(1.5rem, 2.5vw, 2.5rem) 0;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.5rem, 2.5vw, 2.5rem);
+      margin: 0;
+    }
+
+    .pastors-image {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    .text {
+      margin: 0;
+      color: var(--text-white);
+    }
+  }
+}

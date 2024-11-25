@@ -1,4 +1,5 @@
 @import "tools/normalize";
+@import "tools/splide";
 @import "settings/variables";
 @import "settings/typography";
 @import "settings/utilities";
@@ -8,6 +9,9 @@
 @import "modules/hero";
 @import "modules/quote";
 @import "modules/sermon";
+@import "modules/carousel";
+@import "modules/pastors";
+@import "modules/cta";
 
 *,
 *::before,

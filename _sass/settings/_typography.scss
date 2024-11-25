@@ -48,14 +48,14 @@ p {
 }
 
 .cs-topper, .topper {
-  font-size: var(--h7-headline-size);
+  font-size: var(--small-headline-size);
+  font-weight: bold;
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
   letter-spacing: 0.1rem;
-  font-weight: 700;
   color: var(--text-white);
-  margin-bottom: 0.50rem;
+  margin-bottom: 0.250rem;
   display: block;
   position: relative;
 }

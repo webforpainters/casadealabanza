@@ -89,9 +89,7 @@
     .cs-flex-group {
       /* 60px - 220px */
       margin-bottom: clamp(3.75rem, 15.5vw, 13.75rem);
-      /* changes on tablet */
-      margin-left: calc(16 / 16 * 1rem);
-      width: 80vw;
+      width: 100%;
       /* 464px - 562px */
       max-width: clamp(29rem, 60vw, 35.125rem);
       display: flex;
@@ -148,11 +146,6 @@
         top: 0;
         right: 0;
       }
-    }
-
-    .cs-flex-group {
-      /* 44px - 88px */
-      margin-left: clamp(2.75rem, 5.9vw, 5.5rem);
     }
 
     .buttons-wrapper {

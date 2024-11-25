@@ -1,11 +1,11 @@
-<section id="quote-561">
+<section id="quote-561" style="background: {{include.background}}">
   <div class="cs-container">
     <div class="cs-content">
       <span class="cs-topper"></span>
-      <p class="cs-quote">
-        <i>“Our mission is to bring those who are far from God close to him”</i>
+      <p class="cs-quote" style="{% if include.background %}color: var(--text-white){% endif %}">
+        <i>"{{ include.text }}"</i>
       </p>
-      <span class="cs-name">— Pastor Victor Lozáno</span>
+      <span class="cs-name" style="{% if include.background %}color: var(--text-white){% endif %}">— {{ include.author }}</span>
     </div>
   </div>
 </section>

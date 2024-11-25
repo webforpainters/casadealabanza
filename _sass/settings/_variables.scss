@@ -1,5 +1,6 @@
 :root {
   --bg-color: #fff;
+  --bg-light-gray: #f7f7f7;
   --text-black: #202020;
   --text-white: #fff;
   --text-highlight: #E5BD70;
@@ -21,4 +22,5 @@
   --h6-headline-size: clamp(1.5rem, 2.788vw, 2.150rem);
   --h7-headline-size: clamp(1.33rem, 2.4vw, 1.750rem);
   --small-headline-size: clamp(1rem, 2vw, 1.5rem);
+  --tiny-headline-size: clamp(0.80rem, 1.5vw, 1rem);
 }

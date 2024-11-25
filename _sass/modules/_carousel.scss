@@ -1,0 +1,76 @@
+@media only screen and (min-width: 0rem) {
+  #carousel {
+    background-color: var(--bg-light-gray);
+
+    .container {
+    }
+
+    .content {
+      .headline {
+        color: var(--text-black);
+        margin: 0 0 clamp(1.5rem, 2.5vw, 2.5rem) 0;
+        text-transform: capitalize;
+      }
+    }
+
+    .splide__slide {
+      position: relative;
+    }
+
+    .dark-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 1rem;
+    }
+
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .overlay__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .overlay__content-headings {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .topper {
+        margin: 0;
+        font-size: var(--tiny-headline-size);
+      }
+
+      h6 {
+        text-transform: capitalize;
+      }
+    }
+
+    .overlay__content-link {
+      font-size: var(--h7-headline-size);
+      color: var(--text-highlight);
+    }
+
+    .splide__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+}
