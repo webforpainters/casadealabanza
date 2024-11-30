@@ -20,37 +20,68 @@
       display: flex;
       flex-direction: column;
       align-items: start;
+      gap: 2rem;
     }
 
     .headline {
-      margin: 0 auto clamp(1rem, 2vw, 1.25rem) 0;
+      margin: 0 auto 1rem 0;
+      max-width: 28ch;
     }
 
     .text {
       margin: 0;
     }
 
-    .button-group {
+    .content__button-group {
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: clamp(0.85rem, 4vw, 1.55rem);
+      gap: 1rem;
       margin-bottom: 1rem;
     }
 
-    .button-solid, .button-transparent { font-size: var(--h7-headline-size); }
-
     .video {
       width: 100%;
+
+      iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
     }
   }
 }
 
+/* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #sermon {
-    .button-group {
+    padding-left: clamp(2rem, 5vw, 2.5rem);
+    padding-right: clamp(2rem, 5vw, 2.5rem);
+
+    .content {
+      gap: 2rem;
+    }
+
+    .content__button-group {
       flex-direction: row;
-      gap: clamp(0.85rem, 4vw, 1.55rem);
+      gap: 1rem;
+
+      [class^="button"] {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sermon {
+    .container {
+      flex-direction: row;
+    }
+
+    .video {
+      align-self: center;
     }
   }
 }

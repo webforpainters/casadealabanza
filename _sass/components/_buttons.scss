@@ -1,7 +1,7 @@
 // Define shared styles
 %button-base {
-  font-size: calc(16 / 16 * 1rem);
-  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+  font-size: var(--button-font-size);
+  line-height: clamp(2rem, 3.8vw, 2.5rem);
   width: 100%;
   text-decoration: none;
   text-align: center;
@@ -28,7 +28,6 @@
   &:hover {
     color: red;
     &:before {
-
       /* Shared hover behavior can be overridden if necessary */
     }
   }

@@ -1,15 +1,26 @@
 @media only screen and (min-width: 0rem) {
   #carousel {
+    padding: var(--section-padding);
     background-color: var(--bg-light-gray);
 
     .container {
+      width: 100%;
+      max-width: calc(1280 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: clamp(2rem, 4vw, 4rem);
     }
 
     .content {
       .headline {
         color: var(--text-black);
-        margin: 0 0 clamp(1.5rem, 2.5vw, 2.5rem) 0;
-        text-transform: capitalize;
+        margin: 0 0 1rem 0;
+        text-transform: uppercase;
+      }
+      .topper {
+        color: var(--text-black);
       }
     }
 
@@ -71,6 +82,31 @@
       height: 100%;
       object-fit: cover;
       border-radius: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  #carousel {
+    padding-left: clamp(2rem, 5vw, 2.5rem);
+    padding-right: clamp(2rem, 5vw, 2.5rem);
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  #carousel {
+    .container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .content {
+      width: 100%;
+      margin: auto;
+    }
+
+    .splide {
+      width: 100%;
     }
   }
 }

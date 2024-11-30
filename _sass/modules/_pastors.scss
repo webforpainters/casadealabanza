@@ -1,36 +1,55 @@
 @media only screen and (min-width: 0rem) {
   #pastors {
-    background-color: var(--black);
+    padding: var(--section-padding);
+    background: var(--black);
+    color: var(--text-white);
 
     .container {
       width: 100%;
+      max-width: calc(1280 / 16 * 1rem);
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 2rem;
     }
 
     .headline {
-      text-transform: capitalize;
-      margin: 0 0 clamp(1.5rem, 2.5vw, 2.5rem) 0;
-    }
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      gap: clamp(1.5rem, 2.5vw, 2.5rem);
-      margin: 0;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
     }
 
     .pastors-image {
       width: 100%;
       height: 60vh;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 1rem;
     }
 
     .text {
       margin: 0;
       color: var(--text-white);
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  #pastors {
+    padding-left: clamp(2rem, 5vw, 2.5rem);
+    padding-right: clamp(2rem, 5vw, 2.5rem);
+
+    .pastors-image {
+      aspect-ratio: 16 / 9;
+    }
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  #pastors {
+    .container {
+      flex-direction: row;
+    }
+
+    .content {
+      margin: auto
     }
   }
 }

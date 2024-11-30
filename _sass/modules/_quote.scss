@@ -55,7 +55,7 @@
 
     .cs-quote {
       /* 31px - 49px */
-      font-size: clamp(1.9375rem, 5.1vw, 3.0625rem);
+      font-size: clamp(1.5rem, 3.5vw, 2.8rem);
       line-height: 1.2em;
       font-weight: 900;
       margin: 0;
@@ -76,3 +76,9 @@
   }
 }
 
+@media only screen and (min-width: 48rem) {
+  #quote-561 {
+    padding-left: clamp(2rem, 5vw, 2.5rem);
+    padding-right: clamp(2rem, 5vw, 2.5rem);
+  }
+}

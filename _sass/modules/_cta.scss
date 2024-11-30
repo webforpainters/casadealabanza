@@ -6,6 +6,7 @@
     .container {
       display: flex;
       flex-direction: column;
+      max-width: calc(1280 / 16 * 1rem);
     }
 
     .card {
@@ -33,8 +34,10 @@
       color: var(--text-white);
     }
 
-    .button-solid-tertiary {
-      font-size: var(--h7-headline-size);
-    }
+    //.button-solid-tertiary {
+    //  &:hover {
+    //    color: var(--text-white);
+    //  }
+    //}
   }
 }
