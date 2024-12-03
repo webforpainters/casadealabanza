@@ -2,3 +2,8 @@ url: "https://casadealabanza.church" # the base hostname & protocol for your sit
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Casa De Alabanza" # the name of your site, e.g. ACME Corp.
 site: "Casa De Alabanza"
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:slug
