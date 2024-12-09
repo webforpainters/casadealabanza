@@ -5,8 +5,8 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #footer-1391 {
-    padding: var(--section-padding);
-    padding-top: 0;
+    padding: 0 clamp(2rem, 5vw, 2.5rem);
+    padding-top: 1rem;
     position: relative;
     z-index: 1;
     background-color: var(--black);

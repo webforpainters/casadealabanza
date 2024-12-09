@@ -13,9 +13,7 @@ navigation_settings:
   navigation_links:
     - title: "Home"
       url: "/"
-    - title: "About"
-      url: "/about"
     - title: "Location"
-      url: "/Location"
+      url: "/location"
     - title: "Calendar"
       url: "/calendar"
