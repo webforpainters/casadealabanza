@@ -3,7 +3,32 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Casa De Alabanza" # the name of your site, e.g. ACME Corp.
 site: "Casa De Alabanza"
 
+nav:
+  socials:
+    - title: "Facebook"
+      url: "https://www.facebook.com/"
+      icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg"
+    - title: "Instagram"
+      url: "https://www.instagram.com/"
+      icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg"
+    - title: "Youtube"
+      url: "https://www.youtube.com/"
+      icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg"
+  links:
+    - title: "Home"
+      url: "/"
+    - title: "Location"
+      url: "/location"
+    - title: "Calendar"
+      url: "/calendar"
+
+footer:
+  copyright: "Built by Alamo Studio"
+
 collections:
   posts:
     output: true
     permalink: /blog/:slug
+
+include:
+  - admin

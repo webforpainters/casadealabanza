@@ -10,7 +10,7 @@
         <!--        <img class="cs-logo-img" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/agency-logo-dark.svg" alt="logo" >-->
       </a>
       <ul class="cs-ul">
-        {% for link in site.data.settings.navigation_settings.navigation_links %}
+        {% for link in site.nav.links %}
           <li class="cs-li">
             <a href="#" class="cs-link">{{ link.title }}</a>
           </li>
@@ -20,29 +20,16 @@
     <div class="cs-bottom">
       <!--Social-->
       <ul class="cs-social">
-        <li class="cs-social-li">
-          <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
-            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-white1.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-          </a>
-        </li>
-        <li class="cs-social-li">
-          <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-          </a>
-        </li>
-        <li class="cs-social-li">
-          <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
-            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-          </a>
-        </li>
-        <li class="cs-social-li">
-          <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-          </a>
-        </li>
+        {% for social in site.nav.socials %}
+          <li class="cs-social-li">
+            <a href="" class="cs-social-link" aria-label="{{ social.title }}" target="_blank" rel="noopener">
+              <img class="cs-social-icon cs-default" src="{{ social.icon }}" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+            </a>
+          </li>
+        {% endfor %}
       </ul>
       <span class="cs-copyright">
-        {{ site.data.settings.footer_settings.copyright }}
+        {{ site.footer.copyright }}
       </span>
       <!--      <div class="cs-flex">-->
       <!--        <a href="" class="cs-copyright-link">Privacy Policy</a>-->

@@ -1,0 +1,60 @@
+##### Hero #####
+topper: "Iglesia San Antonio"
+headline: "Casa De Alabanza"
+subheadline: "Somos una comunidad cristiana de latinos apasionados por la palabra de Dios. Educamos y fortalecemos las familias con fundamentos bíblicos."
+
+button:
+  primary:
+    text: "Visita Nuestra Iglesia"
+    url: "/location"
+  secondary:
+    text: "Conócenos"
+    url: "/location"
+
+##### Quotes #####
+quotes:
+  - "Nuestra misión es acercar a aquellos que están lejos de Dios a su presencia."
+  - "El Señor es mi fuerza y mi escudo; en él confía mi corazón, y él me ayuda."
+
+##### Sermon #####
+sermon:
+  topper: "Latest Sermon"
+  headline: "Solo No Puedo!"
+  quote: "El señor quiere que lo busques"
+  by: "Nelson Zavala"
+  buttons:
+    primary:
+      text: "Mira En YouTube"
+      url: "https://www.youtube.com/watch?v=x-tiYn_HYb8"
+    secondary:
+      text: "Más Sermones"
+      url: "https://www.youtube.com/@sacasadealabanza"
+
+##### Carousel #####
+carousel:
+  topper: "Hello World"
+  headline: "Be Inspired"
+  subheadline: "Lorem Ipsum"
+  slides:
+    - topper: "visit us"
+      headline: "New Here?"
+      link_text: "Learn More"
+      link_url: "/"
+    - topper: "join us"
+      headline: "Music Ministry"
+      link_text: "Learn More"
+      link_url: "/"
+
+#### About Pastors ####
+about:
+  topper: ""
+  headline: ""
+  description: ""
+  image_url: ""
+
+cta:
+  headline: ""
+  subheadline: ""
+  button:
+    text: ""
+    url: ""

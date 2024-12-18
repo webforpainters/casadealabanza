@@ -1,20 +1,14 @@
 <section id="hero-228">
   <div class="cs-container">
     <div class="cs-flex-group">
-      <span class="cs-topper highlight">Iglesia San Antonio</span>
-      <h1 class="cs-title">Casa De Alabanza</h1>
+      <span class="cs-topper highlight">{{ site.data.home.content.topper }}</span>
+      <h1 class="cs-title">{{ site.data.home.content.headline }}</h1>
       <p class="cs-text">
-        Somos una comunidad cristiana de latinos apasionados por la palabra de Dios. Educamos y fortalecemos las familias con fundamentos bíblicos.
+        {{ site.data.home.content.subheadline }}
       </p>
       <div class="buttons-wrapper">
-<!--        <a href="#" class="button">Default</a>-->
-        <a href="/location" class="button" data-button-variant="primary">Visita la iglesia</a>
-        <a href="/location" class="button" data-ghost-button>Conócenos</a>
-<!--        <a href="#" class="button-solid">Visit Us</a>-->
-<!--        <a href="#" class="button-transparent">-->
-<!--          <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17" aria-hidden="true">-->
-<!--          Watch Online-->
-<!--        </a>-->
+        <a href="{{ site.data.home.content.button.primary.url }}" class="button" data-button-variant="primary">{{ site.data.home.content.button.primary.text }}</a>
+        <a href="{{ site.data.home.content.button.secondary.url }}" class="button" data-ghost-button>{{ site.data.home.content.button.secondary.text }}</a>
       </div>
     </div>
   </div>
