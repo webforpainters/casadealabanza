@@ -16,23 +16,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Use Node.js LTS version
+          node-version: 18
 
       - name: Install Yarn
-        run: |
-          npm install -g yarn
+        run: npm install -g yarn
 
       - name: Install Node.js Dependencies
-        run: |
-          yarn install
+        run: yarn install
 
       - name: Build TinaCMS
         env:
           NEXT_PUBLIC_TINA_CLIENT_ID: ${{ vars.NEXT_PUBLIC_TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
           GITHUB_BRANCH: ${{ vars.HEAD }}
-        run: |
-          yarn tinacms build
+        run: yarn tinacms build
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -52,8 +49,12 @@ jobs:
         run: |
           bundle exec jekyll build
 
+      - name: Copy TinaCMS Admin to _site
+        run: cp -r admin _site/admin
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          publish_branch: gh-pages
