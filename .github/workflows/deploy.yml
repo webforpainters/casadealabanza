@@ -13,19 +13,36 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18 # Use Node.js LTS version
+
+      - name: Install Yarn
+        run: |
+          npm install -g yarn
+
+      - name: Install Node.js Dependencies
+        run: |
+          yarn install
+
+      - name: Build TinaCMS
+        env:
+          NEXT_PUBLIC_TINA_CLIENT_ID: ${{ vars.NEXT_PUBLIC_TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          GITHUB_BRANCH: ${{ vars.HEAD }}
+        run: |
+          yarn tinacms build
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2.3
 
-      - name: Install Dependencies
+      - name: Install Ruby Dependencies
         run: |
           gem install bundler
           bundle install
-
-      - name: Build TinaCMS
-        run: |
-          npx tinacms build
 
       - name: Build Jekyll Site
         env:
