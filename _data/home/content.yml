@@ -1,60 +1,52 @@
-##### Hero #####
-topper: "Iglesia San Antonio"
-headline: "Casa De Alabanza"
-subheadline: "Somos una comunidad cristiana de latinos apasionados por la palabra de Dios. Educamos y fortalecemos las familias con fundamentos bíblicos."
-
-button:
-  primary:
-    text: "Visita Nuestra Iglesia"
-    url: "/location"
-  secondary:
-    text: "Conócenos"
-    url: "/location"
-
-##### Quotes #####
 quotes:
-  - "Nuestra misión es acercar a aquellos que están lejos de Dios a su presencia."
-  - "El Señor es mi fuerza y mi escudo; en él confía mi corazón, y él me ayuda."
-
-##### Sermon #####
+  - Nuestra misión es acercar a aquellos que están lejos de Dios a su presencia.
+  - 'El Señor es mi fuerza y mi escudo; en él confía mi corazón, y él me ayuda.'
 sermon:
-  topper: "Latest Sermon"
-  headline: "Solo No Puedo!"
-  quote: "El señor quiere que lo busques"
-  by: "Nelson Zavala"
+  topper: Latest Sermon
+  headline: Solo No Puedo!
+  quote: El señor quiere que lo busques
+  by: Nelson Zavala
   buttons:
     primary:
-      text: "Mira En YouTube"
-      url: "https://www.youtube.com/watch?v=x-tiYn_HYb8"
+      text: Mira En YouTube
+      url: 'https://www.youtube.com/watch?v=x-tiYn_HYb8'
     secondary:
-      text: "Más Sermones"
-      url: "https://www.youtube.com/@sacasadealabanza"
-
-##### Carousel #####
+      text: Más Sermones
+      url: 'https://www.youtube.com/@sacasadealabanza'
 carousel:
-  topper: "Hello World"
-  headline: "Be Inspired"
-  subheadline: "Lorem Ipsum"
+  topper: Hello World
+  headline: Be Inspired
+  subheadline: Lorem Ipsum
   slides:
-    - topper: "visit us"
-      headline: "New Here?"
-      link_text: "Learn More"
-      link_url: "/"
-    - topper: "join us"
-      headline: "Music Ministry"
-      link_text: "Learn More"
-      link_url: "/"
-
-#### About Pastors ####
+    - topper: visit us
+      headline: New Here?
+      link_text: Learn More
+      link_url: /
+    - topper: join us
+      headline: Music Ministry
+      link_text: Learn More
+      link_url: /
 about:
-  topper: ""
-  headline: ""
-  description: ""
-  image_url: ""
-
+  topper: ''
+  headline: ''
+  description: ''
+  image_url: ''
 cta:
-  headline: ""
-  subheadline: ""
+  headline: ''
+  subheadline: ''
   button:
-    text: ""
-    url: ""
+    text: ''
+    url: ''
+topper: Casa De Alabanza
+headline: Iglesia Cristiana
+subheadline: >-
+  Ubicados en San Antonio, Texas, somos una comunidad de latinos
+  cristiano-evangélicos. Los invitamos cada Domingo de 11AM a 1PM a nuestro
+  servicio dominical de adoración y prédica de la palabra de Dios.
+button:
+  primary:
+    text: Visita Nuestra Iglesia
+    url: /location
+  secondary:
+    text: Conócenos
+    url: /location
