@@ -6,24 +6,21 @@ site: "Casa De Alabanza"
 nav:
   socials:
     - title: "Facebook"
-      url: "https://www.facebook.com/"
+      url: "https://www.facebook.com/casadealabanzayadoracionsanantonio"
       icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg"
-    - title: "Instagram"
-      url: "https://www.instagram.com/"
-      icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg"
     - title: "Youtube"
-      url: "https://www.youtube.com/"
+      url: "https://www.youtube.com/@casadealabanza.church"
       icon: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg"
   links:
     - title: "Home"
       url: "/"
-    - title: "Location"
+    - title: "Ubicacion"
       url: "/location"
-    - title: "Calendar"
-      url: "/calendar"
+    # - title: "Calendar"
+    #   url: "/calendar"
 
 footer:
-  copyright: "Built by Alamo Studio"
+  copyright: "Casa De Alabanza All Rights Reserved"
 
 collections:
   posts:
